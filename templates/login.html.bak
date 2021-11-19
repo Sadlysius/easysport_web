@@ -19,7 +19,7 @@
         <input type="text" class="form-control" name="username" placeholder="Username" id="username" required>
         <label>Contraseña</label>
         <input type="password" class="form-control" name="password" placeholder="Password" id="password" required>
-        <input type="checkbox" value="checked"><b>Recordar</b>
+        <input type="checkbox" value="checked"><b>Recordad</b>
         <input type="submit" value="Login" class="form-control btn btn-success " name="">
     </form>
     {% with messages = get_flashed_messages()  %}

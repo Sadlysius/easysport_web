@@ -20,7 +20,9 @@ def home():
     if 'loggedin' in session:
     
         # User is loggedin show them the home page
-        return render_template('home.html', username=session['username'])
+        #return render_template('home.html', username=session['username'])
+        mensaje = '¡Validado! ID: ' + str(session['id']) + ' Nombre: '  + str(session['username'])
+        return mensaje
     # User is not loggedin redirect to login page
     return redirect(url_for('login'))
  
