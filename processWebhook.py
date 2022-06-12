@@ -13,6 +13,8 @@ DB_USER = "ranbbcmbtqhcao"
 DB_PASS = "4c74edd940a5b6d200359899004e41e362b0d72fa16b9d5d35aae794dcbbec6b"
 
 conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST)
+
+#poto
  
 @app.route('/')
 def home():
