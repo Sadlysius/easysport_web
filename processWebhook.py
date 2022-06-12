@@ -1,4 +1,4 @@
-from flask import Flask, request, session, redirect, url_for, render_template, flash
+from flask import Flask, request, session, redirect, url_for, render_template, flash, json, jsonify
 import psycopg2 #pip install psycopg2 
 import psycopg2.extras
 import re 
@@ -54,7 +54,8 @@ def login():
                 session['id'] = int(account['id'])
                 session['username'] = account['nombre']
                 # Redirect to home page
-                return redirect(url_for('home'))
+                #return redirect(url_for('home'))
+                return jsonify(["GOOD"])
             else:
                 # Account doesnt exist or username/password incorrect
                 flash('Incorrect username/password')
